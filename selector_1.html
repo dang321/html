@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
 <style>
   ul li{
     color:green;
@@ -12,6 +13,12 @@
 .deactive{
   text-decoration: line-through;
 }
+#selector:nth-child(4){
+  color:skyblue
+}
+.deactive:nth-last-child(3){
+  color:blue
+}
 </style>
   </head>
   <body>
@@ -20,11 +27,8 @@
       <li id="select">HTML</li>
       <li class="deactive">CSS</li>
       <li class="deactive">JavaScript</li>
+      <li id="selector">selector</li>
+      <li class="deactive">last</li>
     </ul>
-    <ol>
-      <li>HTML</li>
-      <li id="select"><u>CSS</u></li>
-      <li>JavaScript</li>
-    </ol>
   </body>
 </html>
